@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Spring Boot Alert Example</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<h1>Spring Boot Alert</h1>
+	
+	 <form action="/hello" method="GET" id="nameForm">
+            <div>
+                <label for="nameField">what should I call you?</label>
+                <input name="myName" id="nameField"><br><br>
+                <button id="btn">Greet me!</button>
+            </div>
+            
+            <script>
+				var submitbtn = document.getElementById("btn");
+				submitbtn.addEventListener("click" , function(){
+					var input = document.getElementById("nameField").value;
+					alert("heyyy " + input);
+				});
+			</script>
+
+</body>
+</html>
